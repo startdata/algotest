@@ -1,18 +1,14 @@
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-
-        int mod = 45678;
-        int result = 5;
-
-        for(int i = 1; i < n; i++) {
-            result = (result + (i + 2) * 3 - 2) % mod;
-        }
-
-        System.out.println(result);
+        String S = sc.nextLine();
         sc.close();
+
+        StringTokenizer st = new StringTokenizer(S ," ");
+        System.out.println(st.countTokens());
+
     }
 }
